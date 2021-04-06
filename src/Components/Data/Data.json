@@ -1,0 +1,62 @@
+[
+    {   
+        "id" : 1 ,
+        "name" : "Diabète Québec",
+        "price" : 487,
+        "image" : "https://www.diabete.qc.ca/wp-content/uploads/2014/08/Les-fruits-768x768.png"
+    },
+    {   
+        "id" : 2 ,
+        "name" : "Pineapple",
+        "price" :785 ,
+        "image" : "https://kcalkitchen.co.uk/wp-content/uploads/2020/03/1874.jpg"
+    },
+    {   
+        "id" : 3 ,
+        "name" : "Strawberry",
+        "price" : 152,
+        "image" : "https://www.flowerpower.com.au/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/image/374066c172/strawberry-red-gauntlet.jpg"
+    },
+    {   
+        "id" : 4 ,
+        "name" : "Mango",
+        "price" :48 ,
+        "image" : "https://static.libertyprim.com/files/familles/mangue-large.jpg?1569271798"
+    },
+    {   
+        "id" : 5 ,
+        "name" : "Orange",
+        "price" :321 ,
+        "image" : "https://static9.depositphotos.com/1642482/1148/i/600/depositphotos_11489364-stock-photo-ripe-orange.jpg"
+    },
+    {   
+        "id" : 6 ,
+        "name" : "Jackfruit",
+        "price" :45 ,
+        "image" : "https://sakasaka.net/wp-content/uploads/2017/06/jackfruits-201706.jpg"
+    },
+    {   
+        "id" : 7 ,
+        "name" : "Banana",
+        "price" : 98,
+        "image" : "https://sb-assets.sgp1.cdn.digitaloceanspaces.com/product/main_image/1593/261fe2a9-17ef-450a-8611-ab2bf70fb17a.jpg"
+    },
+    {   
+        "id" : 8 ,
+        "name" : "Apple",
+        "price" : 105,
+        "image" : "https://st.depositphotos.com/1000141/3140/i/950/depositphotos_31403125-stock-photo-apple-with-leaf.jpg"
+    },
+    {   
+        "id" : 9 ,
+        "name" : "Watermelon",
+        "price" :119 ,
+        "image" : "https://5.imimg.com/data5/BM/MR/MY-41533060/watermelon-fruit-500x500.jpg"
+    },
+    {   
+        "id" : 10 ,
+        "name" : "Guava",
+        "price" :157 ,
+        "image" : "https://www.aishcart.in/3464-large_default/guava-sweet-peru-6-pcs.jpg"
+    }
+]

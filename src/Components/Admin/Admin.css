@@ -1,0 +1,16 @@
+.managerBtn{
+    background-color: rgb(12, 12, 68);
+    border : solid 1px black;
+    padding :50px 25px;
+}
+.managerBtn Button{
+    border : none;
+    color : white;
+}
+.image{
+    width : 10%;
+}
+.table{
+    border: none;
+    text-align: center;
+}
