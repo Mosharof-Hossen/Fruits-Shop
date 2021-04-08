@@ -18,7 +18,7 @@ const AddBook = () => {
         }
         console.log(eventData)
         setAddSingleProduct(true)
-        fetch("http://localhost:5000/addProduct", {
+        fetch("https://mighty-scrubland-12520.herokuapp.com/addProduct", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

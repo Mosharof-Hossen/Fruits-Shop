@@ -11,15 +11,16 @@ const Admin = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [bookings, setBookings] = useState()
     useEffect(() => {
-        fetch("http://localhost:5000/bookings?email=" + loggedInUser.email)
+        // fetch("https://mighty-scrubland-12520.herokuapp.com/bookings?email=" + loggedInUser.email)
+        fetch("https://mighty-scrubland-12520.herokuapp.com/products")
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])
 
-    const handleDelete = (e ,id)=>{
+    const handleDelete = (e ,name)=>{
+        console.log(name)
         e.target.parentNode.parentNode.parentNode.parentNode.style.display = "none"
-        console.log("handleDelete",id)
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://mighty-scrubland-12520.herokuapp.com/delete/${name}`,{
             method : "DELETE"
         })
         .then(res => res.json())
@@ -36,7 +37,7 @@ const Admin = () => {
                     <Link className="" to="/"><Button variant="outline-primary">Edit Fruits</Button></Link>
                 </div>
                 <div className="col-9 manager">
-                    <h3>Your Selected Fruits</h3>
+                    <h3>Fruits Manger</h3>
                     
                     <Table striped bordered hover className = "table" >
                         <thead>
@@ -52,7 +53,7 @@ const Admin = () => {
                                 <tr>
                                     <td>{book.name}</td>
                                     <td>{book.price}</td>
-                                    <td><Link to ="/admin" onClick = {(e)=>handleDelete(e,book._id)}><img  className = "image" src= {logo} alt=""></img></Link></td>
+                                    <td><Link to ="/admin" onClick = {(e)=>handleDelete(e,book.name)}><img  className = "image" src= {logo} alt=""></img></Link></td>
                                 </tr>
 
                             </tbody>)

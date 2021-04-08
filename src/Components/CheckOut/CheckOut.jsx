@@ -9,7 +9,7 @@ const CheckOut = () => {
     const [product, setProduct] = useState({})
     const [addedProduct , setAddSingleProduct] = useState(false)
     useEffect(() => {
-        fetch("http://localhost:5000/products/"+name )
+        fetch("https://mighty-scrubland-12520.herokuapp.com/products/"+name )
             .then(res => res.json())
             .then(data => {
                 const product = (data[0])
@@ -24,7 +24,7 @@ const CheckOut = () => {
 
     const handleCheckOut = () => {
         setAddSingleProduct(true)
-        fetch("http://localhost:5000/addSingleProduct", {
+        fetch("https://mighty-scrubland-12520.herokuapp.com/addSingleProduct", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -37,7 +37,7 @@ const CheckOut = () => {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>Description</th>
+                        <th>Fruits Name</th>
                         <th>Quantity</th>
                         <th>Price</th>
                     </tr>
