@@ -15,7 +15,6 @@ const Admin = () => {
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])
-    console.log(bookings)
 
     const handleDelete = (e ,id)=>{
         e.target.parentNode.parentNode.parentNode.parentNode.style.display = "none"
